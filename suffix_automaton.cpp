@@ -32,7 +32,7 @@ void sa_init() {
   sz++;
   last = 0;
 }
-
+// build -> O(n*log(k))
 void sa_insert(char c) {
   int cur = sz++;
   st[cur].len = st[last].len + 1;

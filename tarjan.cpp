@@ -17,6 +17,7 @@ const ll mod = 1e9+7;
 const ll inf = 1e18+10;
 
 /** Takes in an adjacency list and calculates the SCCs of the graph. */
+// build O(V + E)
 class trj {
   private:
 	vector<vl> rev_adj;

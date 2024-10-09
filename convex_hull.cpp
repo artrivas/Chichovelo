@@ -70,7 +70,8 @@ double abs(point2d a) {
 ftype cross(point2d a, point2d b) {
     return a.x * b.y - a.y * b.x;
 }
- 
+
+// O(n*log(n))
 vector<point2d> convexhull(vector<point2d>& p) {
   int n = p.size();
   if (n <= 3) return p;
