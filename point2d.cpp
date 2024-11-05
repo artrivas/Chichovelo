@@ -70,3 +70,5 @@ double abs(point2d a) {
 ftype cross(point2d a, point2d b) {
     return a.x * b.y - a.y * b.x;
 }
+
+// atan2(y, x) -> transform cartesiano to angle [-pi: pi]
