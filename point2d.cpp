@@ -91,7 +91,7 @@ bool check_inter(const point2d& a, const point2d& b, const point2d& c, const poi
 }
 
 int half(const point2d& p) {
-  return int(p.y || (p.y == 0 && p.x < 0));
+  return int(p.y < 0 || (p.y == 0 && p.x < 0));
 }
 
 // graph planar -> faces in O(nlog(n))
